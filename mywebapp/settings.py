@@ -25,7 +25,7 @@ SECRET_KEY = '1&6r0$%(205p5z1cnq-k4he$)*b2^#_f*u^87w$9r^g@wwuhp&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['serene-brook-73919.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'helloworld.apps.HelloworldConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

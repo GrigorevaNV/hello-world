@@ -1,3 +1,8 @@
-from django.test import TestCase
+from django.test import SimpleTestCase
 
-# Create your tests here.
+
+class HomePageViewTestCase(SimpleTestCase):
+
+    def test_request_home_page(self):
+        response = self.client.get('/')
+        self.assertContains(response, 'Hello World!', status_code=200)
